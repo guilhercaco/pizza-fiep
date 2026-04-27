@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Jacques francois;
+    cursor:grab;
+    
 }
 body{
     background: #000;
@@ -53,6 +55,7 @@ body{
     flex-direction: column;
     padding: 80px 40px;
     transition: 0.4s ease;
+    cursor: grabbing;
 }
 .menu a{
     margin: 15px 0;
@@ -78,4 +81,92 @@ body{
 .overlay-menu.active{
     opacity: 1;
     visibility: visible;
+}
+/*=========hero===========*/
+.hero{
+    height: 100vh;
+    background: url("./pizza-Fundo.png")center/cover no-repeat;
+}
+.overlay{
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+.hero-text h2{
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+.hero-text{
+    max-width: 560px;
+    text-align: right;
+}
+.hero-text button{
+    padding: 12px 28px;
+    border-radius: 2rem;
+    background: #ff3b3b;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: 16px;
+    cursor: grabbing;
+    transition: 0.4s;
+}
+
+.hero-text button:hover{
+    background-color: #873331;
+    transition: 0.3s ;
+}
+.diferenciais{
+    background: #145a32;
+    padding: 80px 20px;
+    text-align: center;
+
+}
+.diferenciais h2{
+    margin-bottom: 50px;
+    font-size: 28px;
+
+}
+/* grip*/
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    background: #1E6F43;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+    cursor: grabbing;
+}
+.card:hover{
+    transform: translateY(-8px);
+    cursor: grabbing;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    cursor: grabbing;
+}
+.card p{
+    font-size: 16px;
+    line-height: 1.3;
+    cursor: grabbing;
 }
