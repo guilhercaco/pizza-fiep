@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Jacques francois;
+    font-family:MedievalSharp;
     cursor:grab;
     
 }
@@ -178,7 +178,40 @@ body{
     text-align: center;
 }
 .cardapio h2{
+    cursor:grabbing;
     font-size:32px;
     margin-bottom: 48px;
     font-weight: 500;
+}
+.lista{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+.lista ul{
+    list-style: none;
+}
+/*titulo das colunas*/
+.lista ul::before{
+    content: attr(data-title);
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+}
+/*itens*/
+.lista li{
+    margin: 6px 0;
+    font-weight: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+/*bolinha igual do filgma*/
+.lista li::before{
+    content:'•';
+    position: absolute;
+    left: 0;
+    color: #000;
 }
