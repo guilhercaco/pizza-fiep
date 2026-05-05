@@ -246,7 +246,6 @@ body{
 .contato{
     padding: 80px 20px;
     background: #fff;
-
 }
 .contato h2{
     text-align: center;
@@ -254,27 +253,44 @@ body{
     font-size:28px;
     color: #000;
 }
+.mapa{
+ margin-top:20px;
+ margin-bottom: 30px;
+ margin-left: 20px;   
+}
+.formulario{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
 #nomeinput{
-    align-items:center;
-    justify-content: center;
-    margin: 0px;
-    padding-right: 60px;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    padding-right: 400px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background: #535353;
+    border-radius: 0.5rem;
+    margin-bottom: 1px;
+    
 }
 #gmailinput{
-    align-items:end;
-    justify-content: end;
-    padding-right: 120px;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding-right: 400px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background: #535353;
+    border-radius: 0.5rem;
+    margin-bottom: 1px;
 }
 
 #formularioinput{
-    align-items:end;
-    justify-content: end;
-    padding-right: 120px;
-    padding-bottom: 90px;
+    
+    padding-right: 600px;
+    padding-bottom: 120px;
+    padding-top: 6px;
+    background: #535353;
+    border-radius: 0.5rem;
+    margin-bottom: 1px;
 }
 .contato button{
    padding: 12px 28px;
@@ -286,7 +302,7 @@ body{
     cursor: 16px;
     cursor: grabbing;
     transition: 0.4s;
-
+    margin-left:1200px;
 }
 
 
