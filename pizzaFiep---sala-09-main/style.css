@@ -240,10 +240,13 @@ body{
     align-items: center;
     margin: 10px;
     align-items: flex-start;
-    font-size: 18px;
+    font-size: 25px;
     text-indent:16px;
 }
-
+.eu{
+    display: flex;
+    gap: 600px;
+}
 
 .contato{
     padding: 80px 20px;
@@ -256,70 +259,83 @@ body{
     color: #000;
 }
 .mapa{
-    margin-top:20px;
-    margin-bottom: 30px;
-    border: #000 3px solid;   
-    overflow: hidden;
+    border-radius: 2rem;
+    border: #000 3px solid;
+    margin-left: 130px;
+    min-width:20px;
+    margin-bottom: 30px;  
     border-radius: 2rem;
 }
 .mapa iframe {
-    width: 100%;
-    height: 500px;
-    display: block;
+    border-radius: 2rem;
+    border: #000 3px solid;
+    width: 600px;
+    height: 400px;
+    
 }
 .formulario{
-    margin-left: 20px;
-    margin-bottom: 5px;
+    padding: 5px 5px;
+    margin-left: 40px;
+    border: #000 3px solid;
+    border-radius: 30px;
+    background: #515151;
+    padding: 8PX;
 }
 
 #nomeinput{
     display: flex;
     align-items: center;
-    width: 600px;
+    width: 300px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 6px;
     padding-top: 6px;
     background: #c4c4c4;
-    border-radius: 0.5rem;
-    margin-bottom: 2px;
+    border-radius: 1rem;
+    margin-bottom: 5px;
     box-sizing: border-box;
     color: #515151;
     cursor:text;
     border: #000 2px solid;
+    
     
     
 }
 #gmailinput{
-    width: 600px;
+    align-items: center;
+    width: 300px;
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 6px;
     padding-top: 6px;
     background: #c4c4c4;
-    border-radius: 0.5rem;
-    margin-bottom: 2px;
+    border-radius: 1rem;
+    margin-bottom: 5px;
     color: #515151;
     border: #000 2px solid;
     cursor:text;
     
+    
 }
 #formularioinput{
-
-    width: 800px;
+    align-items: center;
+    width: 300px;
     box-sizing: border-box;
     padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 6px;
     background: #c4c4c4;
-    border-radius: 0.5rem;
-    margin-bottom: 2px;
+    border-radius: 1rem;
+    margin-bottom: 5px;
     color: #515151;
     cursor:text;
     border: #000 2px solid;
     height: 150px;
     top: 0;
     right: 0;
+    
     
 }
 .contato button{
@@ -332,7 +348,8 @@ body{
     cursor: 16px;
     cursor: grab;
     transition: 0.4s;
-    margin-left:1200px;
+    margin-left:190px;
+    margin-top:110px ;
     border: #000 3px solid;
 }
 .contato button:hover{
@@ -342,6 +359,15 @@ body{
 
 }
 footer{
-    padding: 30px 20px;
+    padding-top: 15px ;
     background: #000;
+    display: block;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer p{
+    margin:0;
+    font-size: large;
+    padding: 2px;
 }
