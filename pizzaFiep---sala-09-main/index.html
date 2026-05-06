@@ -98,43 +98,57 @@
             </div>
         </div>
     </section>
-    <section class="contato">
+    <section class="contato">]
+        <form method=""></form>
             <h2>Entre em Contato</h2>
-            <div>
+            <div class="eu">
                 <!---MAPA-->
                 <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.400773035998!2d-49.27483312373349!3d-25.424861432689994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777905336041!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!---formulario-->
+                <form onsubmit="mensage(event)">
                 <div class="formulario">
                     <div><input type="text"placeholder="nome"id="nomeinput"></div>
                     <div><input type="text"placeholder="gmail"id="gmailinput"></div>
                     <div><input type="text"placeholder="formulario"id="formularioinput"></div>
+                    <div>
+                <button>enviar</button>
                 </div>
+                </form>
             </div>
-            <div>
-                <button>eviar</button>
+                
             </div>
+            
     </section>
     <footer>
-        <div>
+        <div class="text1">
             <p>&copy;GUILHERME ALVES RODRIGUES</p>
         </div>
-        <div>
+        <div class="text">
             <p>(41) 99999-9999</p>
             <p>R.Paula Gomes, 270,São Francisco</p>
         </div>
     </footer>
     <script>
         // cofiguracão do javacript da formulario
+     
+     function mensage(event){
+        const telefone = '5541999999999';
+        event.preventDefault();
+        let nome=document.getElementById('nomeinput').value;
+        let gmail=document.getElementById('gmailinput').value;
+        let formulario=document.getElementById('formularioinput').value;
+        
+        const text = `Olá \n Meu nome é ${nome}, meu email é: ${gmail}.\nMensagem: ${formulario}`;
+        const textoc=encodeURIComponent(text)
+        const whatsurl=`https://wa.me/${telefone}?text=${textoc}`;
+        window.open(whatsurl, "_blank");  
 
 
+     }
+
+        
     </script>
 </body>
 </html>
-
-
-
-
-
-
