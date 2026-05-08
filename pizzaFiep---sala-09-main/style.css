@@ -174,7 +174,7 @@ body{
     cursor: grabbing;
 }
 .cardapio{
-    background: white;
+    background: #c1c1c1;
     color: #000;
     padding : 80px 20px;
     text-align: center;
@@ -186,6 +186,7 @@ body{
     font-weight: 500;
 }
 .lista{
+    
     display: flex;
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
@@ -231,10 +232,13 @@ body{
     
 }
 .texto img{
-     width: 600px;
+    width: 600px;
     height: 400px;
+    
+
 }
 .texto p{
+    margin-right: 50px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -242,6 +246,7 @@ body{
     align-items: flex-start;
     font-size: 25px;
     text-indent:16px;
+    max-width: 1750px;
 }
 .eu{
     display: flex;
@@ -250,7 +255,7 @@ body{
 
 .contato{
     padding: 80px 20px;
-    background: #fff;
+    background: #c1c1c1;
 }
 .contato h2{
     text-align: center;
@@ -265,6 +270,7 @@ body{
     min-width:20px;
     margin-bottom: 30px;  
     border-radius: 2rem;
+    
 }
 .mapa iframe {
     border-radius: 2rem;
@@ -274,12 +280,12 @@ body{
     
 }
 .formulario{
-    padding: 5px 5px;
+    
     margin-left: 40px;
     border: #000 3px solid;
     border-radius: 30px;
     background: #515151;
-    padding: 8PX;
+    padding: 8PX 8px;
 }
 
 #nomeinput{
